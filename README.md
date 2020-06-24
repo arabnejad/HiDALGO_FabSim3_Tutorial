@@ -128,7 +128,11 @@ Two different approaches are provided to install pre-requirement softwares and p
 <center><img src="https://uca.edu/it/files/2017/10/remote_login.png" width="375" height="300"></center>
 
 
-- Download and Install MPI on your Mac : [https://www.open-mpi.org/](https://www.open-mpi.org/)
+- Download and Install MPI on your Mac : [https://www.open-mpi.org/](https://www.open-mpi.org/). Alternatively, you can install it with [Homebrew](https://brew.sh/). You only need to issue the following commands and you're there
+	```sh
+	$ brew update
+	$ brew install open-mpi	
+	``` 
 - Create a folder anywhere on your local machine. Let’s name it `HiDALGO_tutorial`
 	```sh
 	$ mkdir HiDALGO_tutorial
