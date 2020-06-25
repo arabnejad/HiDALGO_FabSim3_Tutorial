@@ -1,6 +1,5 @@
 
-# [Hidalgo] FabSim3 and MUSCLE3 tutorial webinar
-
+# [Hidalgo] FabSim3 and MUSCLE3 installation tutorial
 
 ## For Ubuntu based machines
 Two different approaches are provided to install pre-requirement packages and softwares in your system. In the first approach, you can install all dependencies in your local machine and then follow all instructions during the tutorial, or used the second approach which provides a docker image with pre-installed packages.
