@@ -3,9 +3,9 @@
 
 
 ## For Ubuntu based machines
-Two different approaches are provided to install pre-requirement softwares and packages in your system. In first approach, you can install all dependencies in your local machine and then follow all instructions during the tutorial, or used the second approach which provides a docker image with pre-installed packages
+Two different approaches are provided to install pre-requirement packages and softwares in your system. In the first approach, you can install all dependencies in your local machine and then follow all instructions during the tutorial, or used the second approach which provides a docker image with pre-installed packages.
 
-### Solution 1: install all packages and software in your local Ubuntu based PC
+### Solution 1: Install all packages and software in your local Ubuntu based PC
 - make sure you have python > 3.0 installed in your system
 	```sh
 	$ python --version
@@ -64,9 +64,9 @@ Make sure you have Docker installed on your PC. To install it, you can follow th
 	[HiDALGO_tutorial]$ git clone https://github.com/djgroen/flee.git
 	```
 - Config yml files
-	* Goto `HiDALGO_tutorial/FabSim3/deploy` folder
-	* make a copy of `machines_user_example.yml` file, and name it `machines_user.yml`
-	* Replace localhost entry
+	* Go to `HiDALGO_tutorial/FabSim3/deploy` folder
+	* Make a copy of `machines_user_example.yml` file, and name it `machines_user.yml`
+	* Make changes in `machines_user.yml` by replacing the localhost entry
 		```yaml
 		localhost:  
 			username: "your-username"
@@ -81,11 +81,12 @@ Make sure you have Docker installed on your PC. To install it, you can follow th
 			home_path_template: "/FabSim3/localhost_exe"
 			run_command: "mpirun --allow-run-as-root -np $cores"
 		```
-- To download the Docker image, you can use:
+- Go back to `HiDALGO_tutorial` and download the Docker image using
 	```sh
 	[HiDALGO_tutorial] $ docker pull ha3546/hidalgo_fabsim3_tutorial_webinar
 	```
-- Create a new file, named `hidalgo_fabsim3_tutorial.sh`, and fill is by
+Note: If permission is denied, use `sudo docker pull ha3546/hidalgo_fabsim3_tutorial_webinar`
+- Create a new file, named `hidalgo_fabsim3_tutorial.sh`, and fill it with
 	```bash
 		#!/bin/bash
 		
@@ -115,7 +116,7 @@ Make sure you have Docker installed on your PC. To install it, you can follow th
 ## For MacOSX based machines
 Two different approaches are provided to install pre-requirement softwares and packages in your system. In first approach, you can install all dependencies in your local machine and then follow all instructions during the tutorial, or used the second approach which provides a docker image with pre-installed packages
 
-### Solution 1: install all packages and software in your local MacOSX based machines
+### Solution 1: Install all packages and software in your local MacOSX based machines
 - make sure yomakeu have python > 3.0 installed in your system
 	```sh
 	$ python --version
@@ -128,7 +129,7 @@ Two different approaches are provided to install pre-requirement softwares and p
 <center><img src="https://uca.edu/it/files/2017/10/remote_login.png" width="375" height="300"></center>
 
 
-- Download and Install MPI on your Mac : [https://www.open-mpi.org/](https://www.open-mpi.org/). Alternatively, you can install it with [Homebrew](https://brew.sh/). You only need to issue the following commands and you're there
+- Download and install MPI on your Mac : [https://www.open-mpi.org/](https://www.open-mpi.org/). Alternatively, you can install it with [Homebrew](https://brew.sh/). Once Homeebrew is installed, you only need to run the following commands and open-mpi will be installed
 	```sh
 	$ brew update
 	$ brew install open-mpi	
@@ -167,8 +168,8 @@ Two different approaches are provided to install pre-requirement softwares and p
 	``` 
 
 ### Solution 2: Using pre-configured Docker image
-Make sure you have Docker installed on Mac machine. To install it, you can follow the institution form this website : [https://docs.docker.com/docker-for-mac/install/](https://docs.docker.com/docker-for-mac/install/)
- -   The rest of the configuration is the same as Ubuntu machines. Please follow instructions provided in [Solution 2 for Ubuntu machines](#docker)
+Make sure you have Docker installed on Mac machine. To install it, you can follow the institution form this website : [https://docs.docker.com/docker-for-mac/install/](https://docs.docker.com/docker-for-mac/install/).
+ -   The rest of the configuration is the same as Ubuntu machines. Please follow instructions provided in [Solution 2 for Ubuntu machines](#docker).
 
 ## For Windows based machines
-The suggested approach is installing Ubuntu in a VirtualBox VM. and follow the Ubuntu based machine instructions
+The suggested approach is installing Ubuntu in a VirtualBox VM. and follow the Ubuntu based machine instructions.
