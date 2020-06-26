@@ -42,6 +42,11 @@ Two different approaches are provided to install pre-requirement packages and so
 	[HiDALGO_tutorial]$ cd FabSim3
 	[HiDALGO_tutorial/FabSim3]$ python3 configure_fabsim.py
 	``` 
+	After installation process, the main FabSim3 directory is added in your `$PYTHONPATH` and `$PATH` environment variable. You can find these changes on your bash profile (for linux check `~/.bashrc`, and for MacOS check `~/.bash_profile`)
+- To make the `fabsim` command available in you system, please restart the shell by opening a new terminal or just re-load your bash profile by source command	
+	```sh
+	[HiDALGO_tutorial]$ source ~/.bashrc
+	``` 
 - You can test the installation, by installing FabDummy plugin and test a dummy test
 	```sh
 	[HiDALGO_tutorial/FabSim3]$ fabsim localhost install_plugin:FabDummy
@@ -159,6 +164,11 @@ Two different approaches are provided to install pre-requirement softwares and p
 	```sh
 	[HiDALGO_tutorial]$ cd FabSim3
 	[HiDALGO_tutorial/FabSim3]$ python3 configure_fabsim.py
+	``` 
+	After installation process, the main FabSim3 directory is added in your `$PYTHONPATH` and `$PATH` environment variable. You can find these changes on your bash profile (for linux check `~/.bashrc`, and for MacOS check `~/.bash_profile`)
+- To make the `fabsim` command available in you system, please restart the shell by opening a new terminal or just re-load your bash profile by source command	
+	```sh
+	[HiDALGO_tutorial]$ source ~/.bash_profile
 	``` 
 - You can test the installation, by installing FabDummy plugin and test a dummy test
 	```sh
